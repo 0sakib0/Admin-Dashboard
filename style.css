@@ -1,0 +1,30 @@
+:root {
+    --primary-color:#8b5cf6;
+    --secondary-color:#ddd6fe;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+ /* sidebar styles */
+
+ .sidebar {
+    background-color: var(--primary-color);
+    grid-row: span 2;
+ }
+
+ /* header styles */
+ .header {
+    background-color: rebeccapurple;
+ }
+
+  /* main-content styles */
+
+.main-content {
+    background-color:var(--secondary-color);
+    grid-column: 2/3;
+}
