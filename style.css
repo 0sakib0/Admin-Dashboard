@@ -17,6 +17,22 @@
     grid-row: span 2;
  }
 
+ .nav, a {
+    width: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.iconify  {
+  
+ }
+
+ .main-icon {
+    width: 3rem;
+ }
+
+
+
+
  /* header styles */
  .header {
     background-color: rebeccapurple;
