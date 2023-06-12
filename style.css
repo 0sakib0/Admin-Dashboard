@@ -17,21 +17,40 @@
     grid-row: span 2;
  }
 
- .nav, a {
-    width: 2rem;
+ .side-nav > h1 > a {
+    display: flex;
+    justify-content: start;
+    font-size: 1.8rem;
     color: rgb(255, 255, 255);
 }
 
-.iconify  {
-  
+ul {
+    display: grid;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+ul > a {
+    color: white;
+}
+
+.side-nav {
+  display: grid;
+  gap: 4rem;
+  justify-content: start;
+  padding-left: 2rem;
+}
+
+ #main-icon {
+    display: grid;
+    align-self: center;
+    font-size: 3rem;
+    margin-top: 10px;
  }
 
- .main-icon {
-    width: 3rem;
- }
-
-
-
+.iconify {
+    margin-right: 15px;
+}
 
  /* header styles */
  .header {
