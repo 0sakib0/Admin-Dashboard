@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
 :root {
     --primary-color:#8b5cf6;
     --secondary-color:#ddd6fe;
@@ -5,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1.1fr 4fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
 }
@@ -15,19 +18,22 @@
  .sidebar {
     background-color: var(--primary-color);
     grid-row: span 2;
+    font-family: 'Fira Sans', sans-serif;
  }
 
- .side-nav > h1 > a {
-    display: flex;
-    justify-content: start;
-    font-size: 1.8rem;
-    color: rgb(255, 255, 255);
+ .side-nav  h1  a {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);  
+    font-weight: bold;
 }
 
 ul {
     display: grid;
     gap: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 ul > a {
@@ -36,25 +42,35 @@ ul > a {
 
 .side-nav {
   display: grid;
-  gap: 4rem;
+  gap: 2rem;
   justify-content: start;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
  #main-icon {
     display: grid;
-    align-self: center;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-top: 10px;
  }
 
-.iconify {
-    margin-right: 15px;
+.nav .iconify {
+    margin-right: 20px;
+}
+
+.side-nav h1 .iconify {
+    margin-bottom: 15px;
+    margin-right: 9px;
+}
+
+.nav {
+    display: grid;
+    margin-left: 10px;
+    gap: 3rem;
 }
 
  /* header styles */
  .header {
-    background-color: rebeccapurple;
+    background-color: rgb(255, 255, 255);
  }
 
   /* main-content styles */
