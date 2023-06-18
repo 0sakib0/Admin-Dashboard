@@ -3,7 +3,12 @@
 :root {
   --primary-color: #8b5cf6;
   --secondary-color: #eaeaeb;
+  --highlight-color:#db2777;
   --font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
 }
 
 button {
@@ -83,10 +88,10 @@ div.side-nav h1 a:hover {
 .header {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1.9fr 1.1fr;
+  grid-template-columns: 2fr 1fr;
   background-color: rgb(255, 255, 255);
   /* margin: 0.4rem; */
-  box-shadow: 10px 5px 5px black;
+  box-shadow: rgba(50, 50, 93, 0.055) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important; 
 }
 
 a:hover {
@@ -114,7 +119,7 @@ label {
 input[type="search"] {
   background-color: var(--secondary-color);
   width: 43vw;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 15px;
   border: none;
 }
@@ -161,7 +166,7 @@ div.profile-1 button:hover {
 }
 
 .profile-2 .iconify {
-  font-size: 4rem;
+  font-size: 4.3rem;
 }
 
 .user-name p{
@@ -187,7 +192,7 @@ div.profile-1 button:hover {
 
 .button {
   font-family: var(--font-family);
-  background-color: #8b5cf6;
+  background-color: var(--primary-color);
   border-radius: 20rem;
   height: 2.3rem;
   width: 6rem;
@@ -198,9 +203,31 @@ div.profile-1 button:hover {
 
 }
 
+.button:hover {
+  color: var(--secondary-color);
+}
+
 /* main-content styles */
 
 .main-content {
-  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 2.8fr 1fr;
+  grid-template-rows:1fr 1fr ;
   grid-column: 2 / 3;
+  margin: 2.1rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.projects {
+  grid-row: span 2;
+  font-size: 1.1rem;
+}
+
+.announcements {
+  font-size: 1.1rem;
+}
+
+.trending {
+  font-size: 1.1rem;
 }
